@@ -1,11 +1,25 @@
 .Aside {
   background-color: yellow;
   display: flex;
+
   .left {
     width: 50%;
     background-color: aqua;
   }
   .right {
     width: 50%;
+    background-image: url("/footer-blob.png"); /* Update with your actual file path */
+    background-size: cover; /* Scale the image to cover the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
   }
+  button {
+    background-color: blue;
+  }
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
