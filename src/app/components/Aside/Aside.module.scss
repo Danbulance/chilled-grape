@@ -1,0 +1,11 @@
+.Aside {
+  background-color: yellow;
+  display: flex;
+  .left {
+    width: 50%;
+    background-color: aqua;
+  }
+  .right {
+    width: 50%;
+  }
+}
