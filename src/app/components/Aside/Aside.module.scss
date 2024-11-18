@@ -1,25 +1,59 @@
 .Aside {
-  background-color: yellow;
   display: flex;
 
   .left {
     width: 50%;
-    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    p {
+      padding: 40px 0;
+      font-size: 24px;
+      line-height: 36px;
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: normal;
+      }
+    }
+    h2 {
+      @media (max-width: 1000px) {
+        font-size: 24px;
+        line-height: normal;
+      }
+    }
+    @media (max-width: 640px) {
+      width: auto;
+    }
   }
   .right {
     width: 50%;
-    background-image: url("/footer-blob.png"); /* Update with your actual file path */
-    background-size: cover; /* Scale the image to cover the entire element */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    @media (max-width: 640px) {
+      width: auto;
+    }
   }
-  button {
-    background-color: blue;
+
+  .desktop {
+    display: block;
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+    @media (max-width: 1000px) {
+      display: block;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 640px) {
+    display: block;
   }
 }
-
 .inner {
-  max-width: 1400px;
+  max-width: 1288px;
   margin: 0 auto;
   padding: 0 20px;
 }

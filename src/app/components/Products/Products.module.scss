@@ -1,0 +1,41 @@
+.inner {
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.Products {
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column; /* Stack product rows vertically */
+  gap: 20px; /* Space between product rows */
+}
+
+.productRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.Product {
+  width: calc(33.333% - 20px); /* 3 products per row */
+  box-sizing: border-box; /* Ensures padding/margins are included in width */
+}
+
+.loadMoreBtn {
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.loadMoreBtn:hover {
+  background-color: #0056b3;
+}

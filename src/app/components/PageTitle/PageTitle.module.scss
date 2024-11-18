@@ -1,0 +1,17 @@
+.PageTitle {
+  background-color: bisque;
+  width: 539px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  button {
+    background: linear-gradient(to right, #73e0a9, #5b68df);
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 66px;
+    font-size: 22px;
+  }
+}

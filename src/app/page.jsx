@@ -3,20 +3,31 @@
 
 import Aside from "./components/Aside/Aside";
 import Button from "./components/Button/Button";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Products from "./components/Products/Products";
+import Test from "./components/Test/Test";
 
 export default async function Page() {
-  let data = await fetch("https://my-json-server.typicode.com/TomSearle/cb-devtest-api/products");
-  let posts = await data.json();
-  console.log(posts);
+  // Fetch all the data from the API (Server-side)
+  const response = await fetch("https://my-json-server.typicode.com/TomSearle/cb-devtest-api/products");
+  const data = await response.json();
+  const flattenedData = data.flat(); // Flatten the array of arrays
+
   return (
     <>
-      <ul>
-        {posts[0].map((post) => (
-          <li key={post.id}>{post.price}</li>
-        ))}
-      </ul>
-
+      <Header />
       <Aside />
+      <Products data={flattenedData} />
+      <Footer />
     </>
   );
+}
+
+{
+  /* <ul>
+{posts.map((post) => (
+  <li key={post.id}>{post.title}</li>
+))}
+</ul> */
 }

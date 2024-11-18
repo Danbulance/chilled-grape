@@ -1,20 +1,31 @@
 import styles from "./Aside.module.scss";
 import Image from "next/image";
-import Plant from "../../../../public/plant.png";
+import plantDesktop from "../../../../public/plant.png";
+import plantMobile from "../../../../public/plant-mobile.png";
+import Button from "../Button/Button";
 
 export default function Aside() {
   return (
     <div className={`${styles.Aside} ${styles.inner}`}>
       <div className={styles.left}>
-        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h2>
+          LOREM IPSUM DOLOR SIT
+          <br /> AMET.
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
           sit amet, consectetur adipiscing elit.
         </p>
-        <button>Read More</button>
+
+        <Button text="Read More" />
       </div>
       <div className={styles.right}>
-        <Image src={Plant} alt="plant" />
+        <div className={styles.desktop}>
+          <Image src={plantDesktop} alt="plant" />
+        </div>
+        <div className={styles.mobile}>
+          <Image src={plantMobile} alt="plant" />
+        </div>
       </div>
     </div>
   );

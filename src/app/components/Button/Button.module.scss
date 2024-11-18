@@ -1,6 +1,8 @@
 .Button {
-  background-color: aqua;
-  span {
-    color: green;
-  }
+  background: linear-gradient(to right, #73e0a9, #5b68df);
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  padding: 8px 45px;
+  align-self: flex-start;
 }
