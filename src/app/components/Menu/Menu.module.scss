@@ -4,6 +4,12 @@
   align-items: center;
   padding-top: 40px;
 
+  h3 {
+    @media (max-width: 820px) {
+      font-size: 28px;
+    }
+  }
+
   .navHolder {
     display: flex;
     align-items: center;
@@ -24,5 +30,8 @@
     color: #212121;
     text-decoration: none;
     font-weight: 600;
+  }
+  @media (max-width: 775px) {
+    display: none;
   }
 }

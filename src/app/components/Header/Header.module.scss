@@ -2,6 +2,9 @@
   height: 900px;
   background-color: lightpink;
   position: relative;
+  @media (max-width: 775px) {
+    height: 500px;
+  }
 }
 
 .inner {

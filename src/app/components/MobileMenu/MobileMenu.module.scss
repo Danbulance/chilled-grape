@@ -1,0 +1,86 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+/* Hamburger menu */
+.menuToggle {
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  position: relative;
+}
+
+.menuToggle.open .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menuToggle.open .bar:nth-child(2) {
+  display: none;
+}
+
+.menuToggle.open .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.navList {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: -1;
+}
+
+.navList li {
+  margin: 15px 0;
+}
+
+.navList li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(to right, #73e0a9, #5b68df);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navList.active {
+  z-index: 90;
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (min-width: 775px) {
+  .navbar {
+    display: none;
+  }
+}

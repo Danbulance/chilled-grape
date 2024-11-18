@@ -10,8 +10,8 @@
 
 .grid {
   display: flex;
-  flex-direction: column; /* Stack product rows vertically */
-  gap: 20px; /* Space between product rows */
+  flex-direction: column;
+  gap: 20px;
 }
 
 .productRow {
@@ -19,23 +19,20 @@
   justify-content: space-between;
   gap: 20px;
   padding-bottom: 50px;
+  @media (max-width: 640px) {
+    flex-wrap: wrap;
+  }
 }
 
-.Product {
-  width: calc(33.333% - 20px); /* 3 products per row */
-  box-sizing: border-box; /* Ensures padding/margins are included in width */
-}
+// .Product {
+//   width: calc(33.333% - 20px);
+//   box-sizing: border-box;
+// }
 
 .loadMoreBtn {
+  font-size: 24px;
+  font-weight: 600;
+  color: #5c6dde;
   margin-top: 20px;
-  padding: 10px;
   cursor: pointer;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-.loadMoreBtn:hover {
-  background-color: #0056b3;
 }
