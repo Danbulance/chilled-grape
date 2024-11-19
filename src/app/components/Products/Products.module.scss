@@ -18,9 +18,10 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   @media (max-width: 640px) {
     flex-wrap: wrap;
+    padding-bottom: 30px;
   }
 }
 

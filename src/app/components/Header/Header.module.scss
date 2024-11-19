@@ -1,7 +1,12 @@
 .Header {
   height: 900px;
-  background-color: lightpink;
   position: relative;
+  background-image: url("../../../../public/marquee-blobs-left.png"), url("../../../../public/marquee-blobs-right.png");
+  background-position: top left, right;
+  background-repeat: no-repeat;
+  @media (max-width: 1140px) {
+    background-size: 40%, 60%;
+  }
   @media (max-width: 775px) {
     height: 500px;
   }
@@ -11,4 +16,20 @@
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.mobileTitle {
+  display: none;
+  position: absolute;
+  top: 30px;
+  h3 {
+    color: #212121;
+    font-size: 28px;
+    @media (max-width: 319px) {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 775px) {
+    display: block;
+  }
 }

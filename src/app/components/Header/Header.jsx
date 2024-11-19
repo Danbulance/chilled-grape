@@ -7,6 +7,9 @@ export default function Header() {
   return (
     <header className={styles.Header}>
       <div className={styles.inner}>
+        <div className={styles.mobileTitle}>
+          <h3>CHILLED GRAPE</h3>
+        </div>
         <Menu />
         <MobileMenu />
         <PageTitle />
