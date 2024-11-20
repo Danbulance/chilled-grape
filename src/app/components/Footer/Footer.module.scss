@@ -80,6 +80,15 @@
     width: auto;
     padding: 40px 0;
   }
+  @media (max-width: 520px) {
+    justify-content: flex-start;
+  }
+}
+
+.leftCol {
+  @media (max-width: 520px) {
+    padding-right: 40px;
+  }
 }
 
 .logosContainerTop {
@@ -130,7 +139,6 @@
   display: none;
   @media (max-width: 520px) {
     display: block;
-    margin: 0 auto;
     padding-bottom: 50px;
   }
 }

@@ -12,15 +12,13 @@ export default function Footer() {
     <footer className={styles.footerContainer}>
       <div className={styles.inner}>
         <div className={styles.mainContainer}>
-          {/* Left block */}
           <div className={styles.footerBackground}>
             <h2>CHILLED GRAPE</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.</p>
           </div>
-          {/* 3 column  */}
+
           <section className={styles.footerColumnContainer}>
-            {/* Left col */}
-            <div>
+            <div className={styles.leftCol}>
               <p className={styles.listTitles}>Company</p>
               <ul className={styles.footerLinks}>
                 <li>
@@ -37,7 +35,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            {/* Middle col */}
+
             <div>
               <p className={styles.listTitles}>Products</p>
               <ul className={styles.footerLinks}>
@@ -55,7 +53,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            {/* Right col */}
+
             <div className={styles.desktopIcons}>
               <p className={styles.listTitles}>Follow Us</p>
 
@@ -72,7 +70,7 @@ export default function Footer() {
               </div>
             </div>
           </section>
-          {/* Mobile Display Icons */}
+
           <div className={styles.mobileIcons}>
             <p className={styles.listTitles}>Follow Us</p>
 
